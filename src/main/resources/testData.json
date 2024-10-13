@@ -1,0 +1,24 @@
+{
+  "LOGIN_USERS": {
+    "testLockedUserLogin": {
+      "username": "alice@example.com",
+      "password": "10203040"
+    },
+    "testNoMatchLogin": {
+      "username": "1@2.com",
+      "password": "f-o-o"
+    },
+    "testNoUserDetailsLogin": {
+      "username": "",
+      "password": ""
+    },
+    "testNoPasswordLogin": {
+      "username": "bob@example.com",
+      "password": ""
+    },
+    "testSuccessfulLogin": {
+      "username": "bob@example.com",
+      "password": "10203040"
+    }
+  }
+}
