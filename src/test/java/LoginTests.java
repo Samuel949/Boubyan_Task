@@ -19,6 +19,7 @@ public class LoginTests extends BaseTest{
     public void beforeMethod(Method method) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         testData = objectMapper.readTree(new File("src/main/resources/testData.json"));
+        loginPage = new LoginPage(driver);
         //retrieving test data from Json file by test case name
         username = testData.path("LOGIN_USERS").path(method.getName()).path("username").asText();
         password = testData.path("LOGIN_USERS").path(method.getName()).path("password").asText();
